@@ -1,20 +1,26 @@
 :root {
+  /* ---------------Accent color--------------- */
+  --accent-color: #2196f3;
+  --accent-highlights-color: #188ce8;
+
+  /* -------------Background color--------------- */
   --basic-background-color: #ffffff;
-  --hero-background-color: #2f303a;
+  --hero-footer-background-color: #2f303a;
   --second-background-color: #f5f4fa;
+
+  /* -----------------Text color------------------ */
   --logo-text-color: #000000;
   --header-text-color: #212121;
-  --header-stroke-color: #ececec;
   --primary-text-color: #757575;
   --second-text-color: #ffffff;
   --accent-text-color: #2196f3;
-  --accent-color: #2196f3;
-  --accent-highlights-color: #188ce8;
+  --btn-text-color: #212121;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --footer-background-color: #2f303a;
+
+  /* ----------------Stroke color----------------- */
+  --header-stroke-color: #ececec;
   --stroke-color-section: #000000;
   --stroke-color-link: #eeeeee;
-  --btn-text-color: #212121;
 }
 
 body {
@@ -88,7 +94,7 @@ body {
 /* ----------------HERO SECTION --------------------- */
 
 .hero {
-  background-color: var(--hero-background-color);
+  background-color: var(--hero-footer-background-color);
 }
 
 .hero-header {
@@ -107,8 +113,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
@@ -179,7 +183,7 @@ body {
 /* ----------------FOOTER SECTION --------------------- */
 
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: var(--hero-footer-background-color);
 }
 
 .footer-logo {
