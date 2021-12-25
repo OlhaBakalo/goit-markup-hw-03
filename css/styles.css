@@ -29,6 +29,29 @@ body {
   color: var(--primary-text-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -50,7 +73,42 @@ body {
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 /* ----------------HEADER SECTION --------------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -95,9 +153,13 @@ body {
 
 .hero {
   background-color: var(--hero-footer-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-header {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -108,15 +170,16 @@ body {
 }
 
 .hero-btn {
-  cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -125,6 +188,11 @@ body {
 }
 
 /* ----------------PRIORITY SECTION --------------------- */
+
+.priority {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .priority-header {
   font-size: 14px;
@@ -141,6 +209,11 @@ body {
 }
 
 /* ----------------WORKS SECTION --------------------- */
+
+.works {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 
 .works-header {
   font-size: 36px;
@@ -220,7 +293,6 @@ body {
 /* ----------------PORTFOLIO SECTION --------------------- */
 
 .portfolio-button {
-  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
