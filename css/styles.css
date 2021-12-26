@@ -82,6 +82,11 @@ img {
   /* outline: 2px solid red; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ---------------- HEADER SECTION --------------------- */
 
 .header {
@@ -210,11 +215,6 @@ img {
 
 /* ----------------PRIORITY SECTION --------------------- */
 
-.priority {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .priority-list {
   display: flex;
   flex-wrap: wrap;
@@ -248,7 +248,6 @@ img {
 
 .works {
   padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .works-header {
@@ -277,9 +276,6 @@ img {
 /* ----------------TEAM SECTION --------------------- */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--second-background-color);
 }
 
@@ -386,11 +382,6 @@ img {
 
 /* ----------------PORTFOLIO SECTION --------------------- */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .btn-list {
   display: flex;
   justify-content: center;
@@ -438,13 +429,13 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-
-  background-color: var(--basic-background-color);
-  border: 1px solid var(--stroke-color-link);
 }
 
 .option-card-info {
   padding: 20px 24px;
+
+  background-color: var(--basic-background-color);
+  border: 1px solid var(--stroke-color-link);
 }
 
 .option-header {
