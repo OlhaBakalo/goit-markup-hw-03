@@ -29,13 +29,13 @@ body {
   color: var(--primary-text-color);
 }
 
+/* ------------------- RESET --------------------- */
+
 p,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   margin: 0;
 }
 
@@ -50,6 +50,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -81,12 +83,12 @@ img {
   outline: 2px solid red;
 }
 
-/* ----------------HEADER SECTION --------------------- */
+/* ---------------- HEADER SECTION --------------------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid var(--header-stroke-color);
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -97,20 +99,10 @@ img {
   align-items: center;
 }
 
-.nav-link {
-  display: flex;
-}
-
-.nav-link:not(:last-child) {
-  margin-right: 40px;
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
 .logo {
+  display: inline-block;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -122,7 +114,16 @@ img {
   color: var(--accent-text-color);
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,7 +142,20 @@ img {
   color: var(--accent-text-color);
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .header-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -149,17 +163,23 @@ img {
   color: var(--primary-text-color);
 }
 
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* ----------------HERO SECTION --------------------- */
 
 .hero {
-  background-color: var(--hero-footer-background-color);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  text-align: center;
+  background-color: var(--hero-footer-background-color);
 }
 
 .hero-header {
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -170,16 +190,18 @@ img {
 }
 
 .hero-btn {
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   background-color: var(--accent-color);
-  border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -194,7 +216,22 @@ img {
   padding-bottom: 94px;
 }
 
+.priority-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.priority-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .priority-header {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -216,6 +253,8 @@ img {
 }
 
 .works-header {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -223,13 +262,31 @@ img {
   color: var(--header-text-color);
 }
 
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.works-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /* ----------------TEAM SECTION --------------------- */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--second-background-color);
 }
 
 .team-header {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -237,7 +294,35 @@ img {
   color: var(--header-text-color);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  background-color: var(--basic-background-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-second-header {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
